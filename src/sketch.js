@@ -9,7 +9,7 @@ const COLORS = [
   [0, 103, 105],
   [0, 58, 62],
 ]
-const SCALE = 1
+const SCALE = 5
 
 const MAIN_COLORS = Array(SCALE).fill(SECONDARY_COLOR).concat(COLORS)
 
@@ -33,7 +33,7 @@ function draw() {
       
       noStroke()
 
-      if (i % 2 == 0 && j % 2 == 0) {
+      if (i % 3 == 0 && j % 3 == 0) {
        
         let alphaMain = randomGaussian(j * j / 10000, j)
         let mainColorIndex = floor([random(0, MAIN_COLORS.length)])
