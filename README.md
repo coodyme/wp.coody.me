@@ -4,6 +4,13 @@ This script made with P5.js will generate a random pixelated wallpaper from a se
 
 Demo:
 
-![Demo](images/demo.png)
+![Demo0](images/demo0.png)
 
-![Demo](images/demo1.png)
+</br>
+
+![Demo1](images/demo1.png)
+
+</br>
+
+
+![Demo2](images/demo2.png)
