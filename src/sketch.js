@@ -1,13 +1,13 @@
 const SIZE = 5
 const W = 1920
 const H = 1080
-const PRIMARY_COLOR = [38, 35, 53]
-const SECONDARY_COLOR = [0, 252, 250]
-const COLORS = [
-  [0, 200, 199],
-  [0, 150, 150],
-  [0, 103, 105],
-  [0, 58, 62],
+const PRIMARY_COLOR = [0, 0, 0] // Background 
+const SECONDARY_COLOR = [249, 203, 40] // Primary
+const COLORS = [ // Shades
+  [198, 158, 0], 
+  [148, 115, 0],
+  [102, 75, 0],
+  [66, 38, 0],
 ]
 const SCALE = 5
 
