@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COODY - Wallpaper Generator</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+  <link rel="stylesheet" href="styles/globals.css" />
+  <link rel="stylesheet" href="styles/chrome.css" />
+  <link rel="stylesheet" href="styles/utils.css" />
+</head>
+
+<body class="appear appear-first" id="sketch">
+  <main class='flex flex-col h-screen justify-between'>
+    <div class="appear appear-first flex items-center justify-center py-12 md:py-4">
+      <a href="https://coody.me" target="_blank"><img src="logo.png" alt="" srcset="" width="250" height="178"></a>
+    </div>
+    <div class='appear appear-second  flex flex-col h-screen justify-between'>
+      <div class="flex flex-row gap-4 m-auto">
+        <div class="mx-auto flex">
+          <div class="w-full rounded bg-foreground from-primary to-secondary p-0.5">
+            <div class="relative flex h-full w-full items-center justify-center">
+              <div class='absolute -inset-0.5 '></div>
+              <button id="download"
+                class='text-background relative bg-foreground hover:bg-background hover:text-foreground transition duration-500 ease-in-out '>Download</button>
+            </div>
+          </div>
+        </div>
+        <div class="mx-auto flex">
+          <div class="w-full rounded bg-gradient-to-r from-primary to-secondary p-0.5 ">
+            <div class="relative flex h-full w-full items-center justify-center">
+              <div class='absolute -inset-0.5 bg-gradient-to-r from-primary to-secondary blur-lg opacity-20'></div>
+              <button id="generate"
+                class='relative  bg-black hover:bg-primary transition duration-500 ease-in-out hover:text-background '>Generate</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="flex flex-col lg:flex-row justify-center  items-center md:justify-between m-8 text-xs">
+        <div>Copyright © 2023 <a href="https://coody.me" target="_blank" class=" hover:underline ">COODY</a>. All
+          rights
+          reserved </div>
+        <a href="https://github.com/coodyme/wp.coody.me" target="_blank" class=" hover:underline ">Clone the
+          repository
+          on GitHub</a>
+      </footer>
+
+    </div>
+  </main>
+  <script type="module" src="sketch.js"></script>
+</body>
+
+</html>

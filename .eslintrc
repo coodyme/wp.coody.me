@@ -1,0 +1,18 @@
+{
+  "plugins": [
+    "p5js"
+  ],
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "p5js/p5": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:p5js/p5"
+  ],
+  "parserOptions": {
+    "sourceType": "module"
+  }
+}
