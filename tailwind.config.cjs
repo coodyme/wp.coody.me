@@ -2,11 +2,23 @@ const { fontFamily } = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  "future": {
+    hoverOnlyWhenSupported: true,
+  },
   content: [
     "./index.html"
   ],
   theme: {
     extend: {
+      keyframes: {
+        wiggle: {
+          "0%, 100%": { transform: "rotate(-3deg)" },
+          "50%": { transform: "rotate(3deg)" }
+        }
+      },
+      animation: {
+        wiggle: "wiggle 200ms ease-in-out"
+      },
       fontFamily: {
         sans: ['var(--font-inter)', ...fontFamily.sans],
       },

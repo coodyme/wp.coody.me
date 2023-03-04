@@ -32,13 +32,20 @@ const {
   rect
 } = p5i()
 
-document.getElementById('download').onclick = () => {
+const downloadButton = document.getElementById('generate')
+const generateButton = document.getElementById('generate')
+
+downloadButton.onclick = () => {
   saveCanvas('coody-wallpaper', 'png')
 }
 
-document.getElementById('generate').onclick = () => {
+generateButton.onclick = () => {
+  if (generateButton.className.includes(' animate-wiggle')) {
+    generateButton.className = generateButton.className.replace(' animate-wiggle', '')
+  } else {
+    generateButton.className = generateButton.className + ' animate-wiggle'
+  }
   redraw()
-
 }
 
 function hexToRgb(hex) {
