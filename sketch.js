@@ -32,7 +32,7 @@ const {
   rect
 } = p5i()
 
-const downloadButton = document.getElementById('generate')
+const downloadButton = document.getElementById('download')
 const generateButton = document.getElementById('generate')
 
 downloadButton.onclick = () => {
@@ -47,6 +47,10 @@ generateButton.onclick = () => {
   }
   redraw()
 }
+
+generateButton.addEventListener('animationend', () => {
+  generateButton.className = generateButton.className.replace(' animate-wiggle', '')
+})
 
 function hexToRgb(hex) {
   hex = hex.replace('#', '');
